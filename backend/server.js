@@ -3,6 +3,10 @@ import cors from "cors";
 
 const PORT = process.env.PORT || 5050;
 const app = express();
+var corsOptions = {
+  origin: process.env.ORIGIN || "http://localhost:5173",
+  optionsSuccessStatus: 200
+};
 
 app.use(express.json()); // auto parse
 app.use(cors());
