@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API = process.env.API_URL || 'http://localhost:5050'
+const API = process.env.API_URL;
 
 function App() {
   const [hello, setHello] = useState('Loading...')
